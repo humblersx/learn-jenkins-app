@@ -7,7 +7,7 @@ pipeline {
         line 1
         line 2
         */
-        
+        cleanWs()
         stage('Build') {
             agent {
                     docker {
